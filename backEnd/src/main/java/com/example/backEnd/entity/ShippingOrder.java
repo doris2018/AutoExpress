@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.security.Timestamp;
 
 @Entity
-@Table(name = "shippingorder")
+@Table//(name = "shippingorder")
 public class ShippingOrder implements Serializable {
     // Let's assume one user can create many salesOrder
     // currently, there are now historical salesorders

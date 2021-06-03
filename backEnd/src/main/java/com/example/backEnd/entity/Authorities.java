@@ -1,15 +1,16 @@
 package com.example.backEnd.entity;
 
 
-import org.hibernate.annotations.Entity;
-import org.hibernate.annotations.Table;
 
+
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 
 
 @Entity
-@Table(name = "authorities")
+@Table//(name = "authorities")
 public class Authorities implements Serializable {
 
     private static final long serialVersionUID = 101L;

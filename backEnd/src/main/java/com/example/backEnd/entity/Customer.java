@@ -1,14 +1,14 @@
 package com.example.backEnd.entity;
 
 
-import org.hibernate.annotations.Table;
+
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "customer")
+@Table//(name = "customer")
 public class Customer implements Serializable { // POJO class can be serialized
 
     private static final long serialVersionUID = 103L;
@@ -19,7 +19,7 @@ public class Customer implements Serializable { // POJO class can be serialized
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(unique = true)
-    private User use; // means FK email
+    private User user; // means FK email
 
     private String firstName;
     private String lastName;

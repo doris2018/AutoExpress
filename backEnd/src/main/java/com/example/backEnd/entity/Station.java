@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "station")
+@Table//(name = "station")
 public class Station implements Serializable {
 
     private static final long serialVersionUID = 301L;
@@ -35,7 +35,7 @@ public class Station implements Serializable {
 
     public List<ShippingOrder> getShippingOrder() { return shippingOrder; }
 
-    public void setShippingOrder(List<ShippingOrder>) { this.shippingOrder = shippingOrder; }
+    public void setShippingOrder(List<ShippingOrder> shippingOrder) { this.shippingOrder = shippingOrder; }
 
     public double getLatitude() { return latitude; }
 
