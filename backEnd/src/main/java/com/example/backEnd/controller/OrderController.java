@@ -13,5 +13,9 @@ public class OrderController {
     private DispatchService dispatchService;
 
     @RequestMapping(value = "/payment", method = RequestMethod.POST)
-    public ResponseEntity<Object> placeOrder(@RequstBody OrderRequestBody orderRequest)
+    public ResponseEntity<Object> placeOrder(@RequstBody OrderRequestBody orderRequest) {
+        //request containing the request body
+        OrderResponseBody order Response = new OrderResponseBody();
+    }
+        
 }
