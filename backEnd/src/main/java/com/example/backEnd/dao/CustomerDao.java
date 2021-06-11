@@ -3,9 +3,13 @@ package com.example.backEnd.dao;
 import com.example.backEnd.entity.Authorities;
 import com.example.backEnd.entity.Customer;
 import com.example.backEnd.entity.User;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 @Respository
 public class CustomerDao {
@@ -31,5 +35,38 @@ public class CustomerDao {
         authorities.setEmailId(request.getEmail());
         Session session = null;
 
+        try {
+            session = sessionFactory.openSession();
+            session.beginTransaction();
+            session.save(authorities);
+            session.save(customer);
+            session.getTransaction().commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            session.getTransaction().rollback();
+            return -1; // on error
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        return 0; // on success
+    }
+
+    public Customer getCurrentCustomer() {
+        Authentication loggedInUser = SecurityContextHolder.getContext().getAuthentication();
+        String emailId = loggedInUser.getName();
+
+        User user = null;
+        try (Session session = sessionFactory.openSession()) {
+            Criteria criteria = session.createCriteria(User.class);
+            user = (User) criteria.add(Restrictions.eq("emailId", emailId)).uniqueResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (user != null) {
+            return user.getCustomer();
+        }
+        return null;
     }
 }
