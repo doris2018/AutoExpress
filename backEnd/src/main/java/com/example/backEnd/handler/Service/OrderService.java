@@ -1,7 +1,7 @@
-package com.example.backEnd.Service;
+package com.example.backEnd.handler.Service;
 
 
-import com.example.backEnd.dao.OrderDao;
+import com.example.backEnd.handler.dao.OrderDao;
 import com.example.backEnd.entity.ShippingOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

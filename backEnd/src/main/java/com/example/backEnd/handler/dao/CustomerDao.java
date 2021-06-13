@@ -1,4 +1,4 @@
-package com.example.backEnd.dao;
+package com.example.backEnd.handler.dao;
 
 import com.example.backEnd.entity.Authorities;
 import com.example.backEnd.entity.Customer;

@@ -1,4 +1,4 @@
-package com.example.backEnd.Service;
+package com.example.backEnd.handler.Service;
 
 // service layer:
 // to decouple controller and DAO
@@ -6,7 +6,7 @@ package com.example.backEnd.Service;
 // you need to put them here
 
 
-import com.example.backEnd.dao.CustomerDao;
+import com.example.backEnd.handler.dao.CustomerDao;
 import com.example.backEnd.entity.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
