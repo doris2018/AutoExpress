@@ -12,9 +12,6 @@ public class ShippingOrder implements Serializable {
     // currently, there are now historical salesorders
     // historical model will be implemented with a historical table later.
 
-    // currently, different order from the same people
-    // may be similar in terms of the content of this table
-
     private static final long serialVersionUID = 201L;
 
     @Id
