@@ -91,5 +91,4 @@ public class ShippingOrder implements Serializable {
 
     public void setStation(Station station) { this.station = station; }
 
-
 }
