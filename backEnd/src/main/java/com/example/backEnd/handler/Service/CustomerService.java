@@ -2,8 +2,7 @@ package com.example.backEnd.handler.Service;
 
 // service layer:
 // to decouple controller and DAO
-// if you have some entity related logic like fetch an image or use external service
-// you need to put them here
+// if you have some entity related logic like fetch an image or use external service, you need to put them here
 
 
 import com.example.backEnd.handler.dao.CustomerDao;
