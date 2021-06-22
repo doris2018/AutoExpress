@@ -15,7 +15,7 @@ public class StationController {
     @RequestMapping(value = "/admin/addStation", method = RequestMethod.POST)
     public ResponseEntity<Object> addStation(@RequestBody StationRequestBody stationRequest) {
 
-        //add station, get stationId
+   
         Integer stationId = stationService.addStation(stationRequest);
 
         //if add unsuccessfully, return bad request
