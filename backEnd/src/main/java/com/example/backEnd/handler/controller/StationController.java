@@ -26,7 +26,7 @@ public class StationController {
         //if add successfully, get a list of stations
         List<StationInfoResponseBody> stationList = stationService.getAllStations();
 
-        //return a list of stations and status
+        
         return new ResponseEntity<>(stationList, HttpStatus.CREATED);
     }
 
