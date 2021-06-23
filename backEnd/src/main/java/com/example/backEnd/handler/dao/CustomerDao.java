@@ -17,7 +17,7 @@ public class CustomerDao {
     @Autowired
     private SessionFactory sessionFactory;
 
-    public int addCustomer(RegisterRequestBody request) { // set是否成功，通过返回一个int来表达
+    public int addCustomer(RegisterRequestBody request) { 
         User user = new User(); // build a user from request
         user.setEnabled(true);
         user.setEmailId(request.getEmail());
