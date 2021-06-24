@@ -55,7 +55,6 @@ public class StationDao {
             //if have, return all
             stations = session.createCriteria(Station.class).list();
         } catch (Exception e) {
-            //if don't have return null
             e.printStackTrace();
         }
 
