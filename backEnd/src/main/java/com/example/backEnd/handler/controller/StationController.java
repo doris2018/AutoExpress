@@ -18,7 +18,6 @@ public class StationController {
    
         Integer stationId = stationService.addStation(stationRequest);
 
-        //if add unsuccessfully, return bad request
         if (stationId == null) {
             return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
         }
