@@ -44,7 +44,7 @@ public class CustomerDao {
         } catch (Exception e) {
             e.printStackTrace();
             session.getTransaction().rollback();
-            return -1; // on error
+            return -1; 
         } finally {
             if (session != null) {
                 session.close();
