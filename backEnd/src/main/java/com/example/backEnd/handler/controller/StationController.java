@@ -22,7 +22,6 @@ public class StationController {
             return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
         }
 
-        //if add successfully, get a list of stations
         List<StationInfoResponseBody> stationList = stationService.getAllStations();
 
         
