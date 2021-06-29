@@ -34,7 +34,6 @@ public class OrderController {
             return new ResponseEntity<>(null, httpStatus.BAD_REQUEST);
         }
 
-        //return tracking number and status
         return new ResponseEntity<>(orderResponse, HttpStatus.CREATED);
     }
 
