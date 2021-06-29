@@ -30,7 +30,6 @@ public class OrderController {
         trackingResponseBody.setStationid(stationId);
 
         if (orderResponse == null) {
-            // give a response body class object in the first parameter
             return new ResponseEntity<>(null, httpStatus.BAD_REQUEST);
         }
 
