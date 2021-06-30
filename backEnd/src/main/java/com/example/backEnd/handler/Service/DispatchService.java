@@ -15,7 +15,6 @@ public class DispatchService {
     }
 
     //return the stationId with the minimum distance to sender's address
-    //手动在数据库里给三个station写了三个地址
     public int dispatchStation(OrderRequestBody orderRequest) {
         double senderLat = orderRequest.getLatitude();
         double senderLon = orderRequest.getLongitude();
