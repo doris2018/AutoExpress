@@ -24,7 +24,6 @@ public class OrderController {
         int orderId = orderService.addOrder(orderRequest);
         orderResponse.setOrderId(orderId);
 
-        //add a dispatched stationId to the response
         TrackingResponseBody trackingResponseBody = new TrackingResponseBody();
         int stationId = dispatchService.dispatchStation(orderRequest);
         trackingResponseBody.setStationid(stationId);
