@@ -50,7 +50,7 @@ public class CustomerDao {
                 session.close();
             }
         }
-        return 0; // on success
+        return 0; 
     }
 
     public Customer getCurrentCustomer() {
