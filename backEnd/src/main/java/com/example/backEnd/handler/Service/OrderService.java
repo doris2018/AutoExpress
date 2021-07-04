@@ -15,7 +15,6 @@ public class OrderService {
     public int addOrder(OrderRequestBody orderRequest) {
         return orderDao.addOrder(orderRequest);
     }
-
     public ShippingOrder getShippingOrderById(int orderId) {
         return orderDao.getShippingOrderById(orderId);
     }
