@@ -13,7 +13,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 
 @Respository
 public class CustomerDao {
-
     @Autowired
     private SessionFactory sessionFactory;
 
