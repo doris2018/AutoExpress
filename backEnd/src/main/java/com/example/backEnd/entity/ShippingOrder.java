@@ -13,7 +13,6 @@ public class ShippingOrder implements Serializable {
     //historical model will be implemented with a historical table later.
 
     private static final long serialVersionUID = 201L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int orderId;
