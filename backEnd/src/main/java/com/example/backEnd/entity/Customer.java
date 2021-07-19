@@ -53,5 +53,4 @@ public class Customer implements Serializable {
     public List<ShippingOrder> getShippingOrder() { return shippingOrder; }
 
     public void setShippingOrder(List<ShippingOrder> shippingOrder) { this.shippingOrder = shippingOrder; }
-
 }
