@@ -2,7 +2,6 @@ package com.example.backEnd.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
-
 @Entity
 @Table//(name = "customer")
 public class Customer implements Serializable { 
