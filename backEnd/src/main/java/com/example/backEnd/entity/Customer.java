@@ -15,7 +15,6 @@ public class Customer implements Serializable {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(unique = true)
     private User user; // means FK email
-
     private String firstName;
     private String lastName;
     private String shippingAddress;
