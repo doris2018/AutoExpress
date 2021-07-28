@@ -1,6 +1,5 @@
 package com.example.backEnd.entity;
 
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.security.Timestamp;
