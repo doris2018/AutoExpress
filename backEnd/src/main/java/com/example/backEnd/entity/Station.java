@@ -7,7 +7,6 @@ import java.util.List;
 @Entity
 @Table//(name = "station")
 public class Station implements Serializable {
-
     private static final long serialVersionUID = 301L;
 
     @Id
