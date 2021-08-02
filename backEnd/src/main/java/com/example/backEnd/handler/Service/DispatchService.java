@@ -41,7 +41,6 @@ public class DispatchService {
     //distance calculator
     private double getDistance(double lat1, double lon1, double lat2, double lon2,
                                 String deliverMethod) {
-
         //if drone is selected --> 直线距离
         if (deliverMethod.equals("drone")) {
             return getDist(lat1, lon1, lat2, lon2);
