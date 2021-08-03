@@ -31,7 +31,6 @@ public class ShippingOrder implements Serializable {
 
     @ManyToOne
     private Station station; // == FK station_id
-
     public int getOrderId() { return orderId; }
 
     public void setOrderId(int orderId) { this.orderId = orderId; }
