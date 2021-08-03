@@ -3,9 +3,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
+
 @Entity
 @Table//(name = "authorities")
 public class Authorities implements Serializable {
+    
     private static final long serialVersionUID = 101L;
 
     @Id
