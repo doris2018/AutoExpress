@@ -9,7 +9,6 @@ public class ShippingOrder implements Serializable {
     // Let's assume one user can create many salesOrder
     // currently, there are now historical salesorders
     //historical model will be implemented with a historical table later.
-
     private static final long serialVersionUID = 201L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
