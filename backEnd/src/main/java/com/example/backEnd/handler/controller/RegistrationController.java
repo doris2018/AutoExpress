@@ -11,7 +11,6 @@ public class RegistrationController {
 
     @Autowired
     private CustomerService customerService;
-
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ResponseEntity<Object> registerCustomer9@RequestBody
     RegisterRequestBody request) {
