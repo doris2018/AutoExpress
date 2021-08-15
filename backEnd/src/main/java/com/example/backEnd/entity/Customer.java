@@ -6,7 +6,6 @@ import java.util.List;
 @Table//(name = "customer")
 public class Customer implements Serializable { 
     private static final long serialVersionUID = 103L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
