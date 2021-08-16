@@ -2,7 +2,6 @@ package com.example.backEnd.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.security.Timestamp;
-
 @Entity
 @Table//(name = "shippingorder")
 public class ShippingOrder implements Serializable {
