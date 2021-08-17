@@ -7,7 +7,6 @@ public class DispatchService {
 
     @Autowired
     private StationDao stationDao;
-
     //get a list of stations
     public List<Station> getStationLocation() {
         return stationDao.getStationsLocation();
