@@ -12,7 +12,6 @@ public class ShippingOrder implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int orderId;
-
     @ManyToOne
     private Customer customer;
     private String senderAddress;
