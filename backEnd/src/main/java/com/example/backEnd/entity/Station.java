@@ -16,7 +16,6 @@ public class Station implements Serializable {
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<ShippingOrder> shippingOrder;
-
     public int getStationId() { return stationId; }
 
     public void setStationId(int stationId) { this.stationId = stationId; }
