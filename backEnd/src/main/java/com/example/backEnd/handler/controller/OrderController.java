@@ -31,7 +31,6 @@ public class OrderController {
         if (orderResponse == null) {
             return new ResponseEntity<>(null, httpStatus.BAD_REQUEST);
         }
-
         return new ResponseEntity<>(orderResponse, HttpStatus.CREATED);
     }
 
