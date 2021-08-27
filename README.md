@@ -23,8 +23,6 @@ This web application is built to help users with robot/drone choices to deliver 
 
 •	Back-end implemented RESTful APIs based on the Spring MVC model and Spring Boot framework.
 
-•	Backend implemented RESTful APIs based on the Spring MVC model and Spring Boot framework.
-
 •	MySQL database schemas design and operated with Hibernate framework.
 
 •	Integrated testing funtions with Postman.
