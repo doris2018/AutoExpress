@@ -2,10 +2,13 @@ package com.example.backEnd.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
+
 @Entity
 @Table//(name = "station")
 public class Station implements Serializable {
+    
     private static final long serialVersionUID = 301L;
+    
     @Id
     private int stationId;
     private int availableDrones;
@@ -16,6 +19,7 @@ public class Station implements Serializable {
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<ShippingOrder> shippingOrder;
+    
     public int getStationId() { return stationId; }
 
     public void setStationId(int stationId) { this.stationId = stationId; }
