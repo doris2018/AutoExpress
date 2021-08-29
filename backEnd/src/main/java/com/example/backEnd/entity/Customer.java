@@ -2,10 +2,13 @@ package com.example.backEnd.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
+
 @Entity
 @Table//(name = "customer")
 public class Customer implements Serializable { 
+    
     private static final long serialVersionUID = 103L;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -22,7 +25,9 @@ public class Customer implements Serializable {
     private List<ShippingOrder> shippingOrder;
 
     public int getId() { return id; }
+    
     public void setId(int id) { this.id = id; }
+    
     public User getUser() { return user; }
 
     public void setUser(User user) { this.user = user; }
