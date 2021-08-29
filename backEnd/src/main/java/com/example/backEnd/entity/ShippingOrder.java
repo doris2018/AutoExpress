@@ -2,16 +2,20 @@ package com.example.backEnd.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.security.Timestamp;
+
 @Entity
 @Table//(name = "shippingorder")
 public class ShippingOrder implements Serializable {
+    
     // Let's assume one user can create many salesOrder
     // currently, there are now historical salesorders
     //historical model will be implemented with a historical table later.
     private static final long serialVersionUID = 201L;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int orderId;
+    
     @ManyToOne
     private Customer customer;
     private String senderAddress;
@@ -28,6 +32,7 @@ public class ShippingOrder implements Serializable {
 
     @ManyToOne
     private Station station; // == FK station_id
+    
     public int getOrderId() { return orderId; }
 
     public void setOrderId(int orderId) { this.orderId = orderId; }
